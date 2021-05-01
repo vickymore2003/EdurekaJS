@@ -16,8 +16,8 @@ var anon = function (a, b) {
 }
 anon(6 + 3)
 
-setTimeout(anon, 3000)
-setTimeout(function () { console.log("function called in setTimeout") }, 5000)
+setTimeout(anon, 1000)
+setTimeout(function () { console.log("function called in setTimeout") }, 500)
 
 //Constructors   --- is called when an object is created using new keyword
 var cons = new Function("a","b","console.log('in constructor');return a+b;");
@@ -25,3 +25,14 @@ console.log(cons(6,8));
 
 
 //Self invoking function
+(function(a,b){
+    console.log("self invoking function")
+    return a+b;
+})((6+7));
+
+
+
+
+
+
+
