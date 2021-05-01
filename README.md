@@ -1,1 +1,1 @@
-"# EdurekaJS" 
+This is tutorial from Edureka
