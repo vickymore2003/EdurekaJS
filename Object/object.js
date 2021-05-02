@@ -45,5 +45,50 @@ sunny4 = createPerson4()
 //     + sunny2.age + " and contact number  "
 //     + sunny3.phno + " his desg is " + sunny4.designation)
 
+//constructor function
+function createPerson5() {
+    this.name = "sunny5",
+        this.designation = "Tester",
+        this.age = 35,
+        this.phno = 555555
+}
+sunny5 = new createPerson5()
+
+//Object creation
+var Animal = {
+    type: "Invertibrate",
+    displayType: function () { alert("Animal" + " is: " + this.type); }
+}
+
+var horse = Object.create(Animal);
+horse.type = "vertibrate";
+// horse.displayType()
+
+var fish = Object.create(Animal);
+fish.type = "Aquatic"
+// fish.displayType()
+
+//Delete property
+var trainer = {
+    name: "ABC",
+    sub: ["Maths", "Phy", "Chem"],
+    classes: ["X", "XI", "XII"],
+    age: 36
+}
+var properties = "";
+for (p in trainer) {
+    properties = properties + p + " : "
+}
+console.log(properties)
+
+delete trainer.age
+var properties = "";
+for (p in trainer) {
+    properties = properties + p + " : "
+}
+console.log(properties)
+
+
+
 
 
